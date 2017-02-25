@@ -41,6 +41,7 @@ lowing the user to toggle back and forth between the two images.
             margin-left: auto;
             margin-right: auto;
             max-width: 50em;
+            margin-top: -4em;
         }
 
         img.displayed {
@@ -48,8 +49,8 @@ lowing the user to toggle back and forth between the two images.
             margin-left: auto;
             margin-right: auto;
             margin-top: 5vw;
-            width: 100%;
-            padding: 3em
+            width: 60%;
+            /*padding: 3em*/
         }
 
         .content {
@@ -63,7 +64,7 @@ lowing the user to toggle back and forth between the two images.
         }
 
         h1 {
-            font-size: 5vh;
+            font-size: 4vh;
             font-family: 'Overpass Mono', monospace;
             font-weight: 100;
             margin: 0;
@@ -88,15 +89,20 @@ lowing the user to toggle back and forth between the two images.
             text-align: left;
             line-height: 1.5;
         }
+        .top {
+
+            padding: 2em;
+
+        }
 
         @media all and (min-width: 960px) {
             h1 {
-                font-size: calc(5vw * 0.7);
+                font-size: calc(7vw * 0.7);
                 font-family: 'Overpass Mono', monospace;
                 font-weight: 100;
                 color: yellow;
                 text-align: left;
-                line-height: 1.7;
+                line-height: 1.5;
             }
             h2 {
                 font-size: calc(3vw * 0.7);
@@ -111,6 +117,11 @@ lowing the user to toggle back and forth between the two images.
                 padding: 4vw;
                 text-align: left;
                 line-height: 1.5;
+            }
+            .top {
+
+                padding: 5em;
+
             }
         }
 
@@ -138,11 +149,16 @@ lowing the user to toggle back and forth between the two images.
                 text-align: left;
                 line-height: 1.5;
             }
+            .top {
+
+                padding: 5em;
+
+            }
         }
 
         .nav {
             height: 7vh;
-            font-size: 1em;
+            font-size: 2.5vh;
             font-family: 'Overpass Mono', monospace;
             font-weight: 100;
             text-align: center;
@@ -154,10 +170,7 @@ lowing the user to toggle back and forth between the two images.
 
 
 
-        .top {
-            padding-bottom: 5em;
-            padding-top: 10em;
-        }
+
 
         .quickdetails {
             background-color: #971EB2;
@@ -165,6 +178,7 @@ lowing the user to toggle back and forth between the two images.
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
         }
 
 
@@ -174,20 +188,21 @@ lowing the user to toggle back and forth between the two images.
 
     <div class="row-fluid">
 
-        <div class="col-sm-6 nav" style="background-color: #0076FF;">
-            <a href="">
-                <- return home</a>
-        </div>
-        <div class="col-sm-6 nav" style="background-color: #E5D410;">
-            <a href="">venture onwards -></a>
-        </div>
+        <a href="http://www.spencermwatts.com/"><div class="col-sm-6 nav" style="background-color: #0076FF;">
+
+                <- return home
+        </div></a>
+        <a href="http://www.spencermwatts.com/"><div class="col-sm-6 nav" style="background-color: #E5D410;">
+            venture onwards ->
+        </div></a>
 
 
         <div class="col-sm-12 top" style="background-color: #1EB255;">
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-6">
                 <img class="headerimg" src="assets/placeholder_double.png">
-            </div>
-            <div class="col-sm-6">
+            </div> -->
+            <div class="col-sm-12 top" style="text-align:center">
+
                 <h1>How do you make a hiring decision as easy as <img src="assets/hirewire_checkmark.png" style="width:7vw">?</h1>
             </div>
         </div>
@@ -201,7 +216,7 @@ lowing the user to toggle back and forth between the two images.
                 <div class="col-sm-3 quickdetails">
                     <h2 style="padding-top:.5em">Summary</h2>
                 </div>
-                <div class="col-sm-9 quickdetails">
+                <div class="col-sm-12 quickdetails">
                     <h3 style="color:white;">
               <span style="color:black; font-weight:bolder;">subject</span> an app for employers actively hiring employees<br />
               <br style="line-height:0px;" />
@@ -226,11 +241,11 @@ lowing the user to toggle back and forth between the two images.
 
 
                         <h3>
-                We know from user research that managers care about dependability, so let's make that part of the experience:
+                We know from user research that managers care about dependability, so let's make that part of the experience.
                 <br /><br /> Dependability breaks down into two parts:<br /><br />
                   1. <b>distance</b> - the closer the jobseeker, the more likely they are to show up for shifts.
                 <br /><br />
-                  2. <b>previous responsibilties</b>. it matters more what the jobseeker has done, not where they've done it.
+                  2. <b>previous roles</b>. it matters more what the jobseeker has done, not where they've done it.
                   <br /><br />
                 </h3>
                     </div>
@@ -239,7 +254,7 @@ lowing the user to toggle back and forth between the two images.
 
                       <a name="abc"></a>
                       <a href="#abc" class="pop displayed">
-                          <img class ="displayed" src="assets/placeholder_phone_black.png">
+                          <img class ="displayed" src="assets/section1.png">
                       </a>
 
 
@@ -275,7 +290,7 @@ lowing the user to toggle back and forth between the two images.
                     <div class="col-sm-6 ">
                         <a name="abc2"></a>
                         <a href="#abc2" class="pop displayed">
-                          <img class="displayed" src="assets/placeholder_double.png">
+                          <img class="displayed" style="width:100%" src="assets/showcase.png">
                         </a>
 
 
@@ -283,11 +298,10 @@ lowing the user to toggle back and forth between the two images.
                     <div class="col-sm-6 ">
                         <h3>
                       Give managers the information they expect and let them to amazing things with it.<br /> <br />
-                    1. remind them of exactly what they were searching. (image: zoom in of top half of search screen) <br /><br />
-                     2.Encourage  desired behavior (saying YES to candidates) using visual queues 1. image: zoom in bottom
-                    half of detail interest screen <br /><br />
-                    3. Let them dig a little deeper to satisfy their curiosity 1. image:
-                     zoom in bottom half of detail interest screen
+                     1. Encourage desired behavior (like avoiding the X-button) with visual queues. <br /><br />
+                    2. Don't leave them hanging; remind them of exactly what they were searching <br /><br />
+
+                    3. Let them dig a little deeper to better understand the candidate and his/her skills
                     </h3>
                     </div>
 
@@ -297,13 +311,13 @@ lowing the user to toggle back and forth between the two images.
 
         <div class="row-fluid">
 
-            <div class="col-sm-6 nav" style="background-color: #0076FF;">
-                <a href="">
-                    <- return home</a>
-            </div>
-            <div class="col-sm-6 nav" style="background-color: #E5D410;">
-                <a href="">venture onwards -></a>
-            </div>
+          <a href="http://www.spencermwatts.com/"><div class="col-sm-6 nav" style="background-color: #0076FF;">
+
+                  <- return home
+          </div></a>
+          <a href="http://www.spencermwatts.com/"><div class="col-sm-6 nav" style="background-color: #E5D410;">
+              venture onwards ->
+          </div></a>
         </div>
 
 </body>
