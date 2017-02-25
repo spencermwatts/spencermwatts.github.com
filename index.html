@@ -6,42 +6,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Hover/css/hover.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
 
 </head>
 
 <body>
 
     <style type="text/css">
-        .e-mail:before {
-            content: attr(data-website) "\0040" attr(data-user);
-            unicode-bidi: bidi-override;
-            direction: rtl;
-        }
 
-        .carousel {
-            background-image: none
-        }
+      .fascist {
+                  font-size: 50%;
+                  letter-spacing: 8px;
+                  font-family: 'UnifrakturCook', monospace !important;
+                  font-weight: bold;
+                  background: red;
+                  color:white;
+                  word-wrap: break-word;
 
-        .carousel-control {
-            opacity: 1;
-            color: #000;
-            background: none !important;
-            filter: none !important;
-            width: 150px;
-            text-shadow: none;
-            &.left,
-            &.right {
-                background-image: none;
-            }
-        }
+              }
 
-        .carousel-control:hover {
-            color: #999;
-        }
+        a {
+                color: white;
+
+              }
 
         .name {
             font-size: 75px;
@@ -49,6 +42,13 @@
             font-weight: bold;
             color: white;
             text-shadow: 2px 1px DarkSlateGrey;
+        }
+
+        .container{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
         }
 
         .container-fluid {
@@ -65,6 +65,12 @@
             -webkit-box-shadow: 10px 10px #DADADA;
         }
 
+        .x:hover{
+          /*text-transform: uppercase;*/
+          /*letter-spacing: -1px;*/
+
+        }
+
         #about-1 {
             text-align: right;
             margin-right: -16px;
@@ -77,19 +83,17 @@
         }
 
         .content {
-            font-size: 200px;
-            font-family: 'Raleway', sans-serif;
-            font-weight: bolder;
-            /*padding: -100px;*/
+            font-size: 3vw;
+            font-family: 'Overpass Mono', monospace;
+            font-weight: 100;
+            margin: 5vw;
             color: #ffffff;
             background-color: #E5D410;
-            -webkit-box-shadow: 10px 10px #4C40FF;
-            /*margin-top:-25px;*/
-            /*padding-top: 10px;*/
-            box-shadow: 10 10;
-            min-height: 500px;
+            padding: 1em;
+
             text-align: center;
             position: relative;
+
         }
 
         #content-1 {
@@ -98,23 +102,23 @@
         }
 
         #content-2 {
-            background-color: #4C40FF;
+            background-color: #FF6000;
             -webkit-box-shadow: -10px 10px #971EB2;
         }
 
         #content-3 {
             background-color: #DADADA;
-            -webkit-box-shadow: -10px -10px #971EB2;
+            -webkit-box-shadow: 10px 10px #FF6000;
         }
 
         #content-4 {
             background-color: #4C40FF;
-            -webkit-box-shadow: 10px 10px #1EB255;
+            -webkit-box-shadow: 10px -10px #1EB255;
         }
 
         #content-5 {
-            background-color: #FF6000;
-            -webkit-box-shadow: -10px 10px #4C40FF;
+            background-color: #black;
+            -webkit-box-shadow: 10px 10px #4C40FF;
         }
 
         #content-5 {
@@ -126,6 +130,20 @@
             background-color: #4C40FF;
             -webkit-box-shadow: -10px 10px #971EB2;
         }
+
+        #content-descriptions{
+          font-size: 32 !important;
+          font-family: 'Raleway', sans-serif;
+          font-weight: bolder;
+          /*padding: -100px;*/
+          color: #ffffff;
+        }
+        .thumbnail {
+            background-color: rgba(0, 0, 0, 0);
+            border: 0 none;
+            width: 25%;
+            height: 25%;
+        }
         /* TODO:
 
 - connect github to AWS
@@ -136,9 +154,29 @@
 - figure out how to show content (should it all be on the same page? -
 - use http://jscroll.com/ to load content with scroll
 - move contact me up so it's more visible
+- put content supporting each of my claims (user researcher, product designer, etc)
 
 
  */
+
+ /*@media only screen and (max-width: 1200px) {
+ .text {font-size:1.2em; }
+ .descriptions {font-size:1em;}
+ .yeartext {font-size:90%;}
+ .title {font-size:4em; }
+ .subtitle {font-size:2em;}
+ .table{padding-left: 0}
+ }
+ @media only screen and (max-width: 500px) {
+ .descriptions {font-size:.8em; }
+ .text {font-size:1em; line-height:.5}
+ .yeartext {font-size:80%;}
+ .title {font-size:2em; }
+ .subtitle {font-size:1.5em;
+ .table{padding-left: 0}
+
+ }*/
+
     </style>
     <div class="container-fluid">
         <div class="col-lg-12 name " style="margin-left:-30px">SPENCER MICHAEL WATTS</div>
@@ -149,70 +187,37 @@
             <p>atlanta-based</p>
         </div>
         <div class="col-sm-4 about" style="padding-bottom:10px; padding-top:10px">
-            <p>product designer</p>
-            <p>data analyst</p>
-            <p>user researcher</p>
-            <p>project manager</p>
-            <p>dog owner</p>
+          <span class="x">  <p>product designer</p> </span>
+          <span class="x">  <p>data analyst</p></span>
+          <span class="x">  <p>user researcher</p></span>
+          <span class="x">  <p>project manager</p></span>
+          <span class="x">  <p>dog owner</p></span>
         </div>
     </div>
 
+    <div class="container-fluid">
+      <div class="col-lg-12">
+      <div class="row">
 
-    <div data-interval="false" style: "background-image: none">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="col-lg-6 content"  id="content-1">UX and UI: mobile app A</div>
+        <div class="col-lg-6 content"  id="content-3">UX and UI: mobile app B</div>
+        <div class="row">
 
-            <div class="carousel-inner">
+        <div class="col-lg-6 content fascist" id="content-2"><a href="http://fascist.report/">website: fascist.report</a></div>
+        <div class="col-lg-6 content"  id="content-4">interaction: google reminders</div>
 
-                <div class="item active">
-                    <div class="container-fluid">
-                        <div class="col-lg-12 content" id="content-1">
-                            <div>~</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="container-fluid">
-                        <div class="col-sm-12 content" id="content-2">
-                            <div>$</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="container-fluid">
-                        <div class="col-sm-12 content" id="content-3">
-                            <div>@</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="container-fluid">
-                        <div class="col-sm-12 content" id="content-4">
-                            #
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-
-                    <div class="container-fluid">
-                        <div class="col-sm-12 content" id="content-5">
-                            %
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" style="color:white"></span>
-            </a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" style="color:white"></span>
-            </a>
-        </div>
     </div>
-    <!-- contact me at <span class="e-mail" data-user="em" data-website="moc.sttawmrecneps"></span> -->
+
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container-fluid">
+
+  <div class="col-lg-12 content"  id="content-6">resume</div>
+</div>
+</div>
+
     <div class="container-fluid">
         <div class="col-sm-3 about" style="padding:30px; background-color:#FF6000;-webkit-box-shadow: -10px -10px  #DADADA">
             CONTACT ME:
@@ -221,6 +226,13 @@
             ME (at) SPENCER M WATTS (dot) COM </div>
     </div>
     </div>
+    <div class="container-fluid">
+      <div class="col-sm-12 about" style="background-color:white; text-align:center;color:black">
+        made from scratch in ATL
+
+      </div>
+  </div>
+
 </body>
 
 </html>
