@@ -21,13 +21,6 @@
 </head>
 
 
-<!-- TODO:
-Images start out as full UI images
-after some delay, they fade into wireframes (transition is .5 to .75 seconds)
-at the same time they turn into wireframes, a button appears underneath the image, al-
-lowing the user to toggle back and forth between the two images.
- -->
-
 <body>
 
     <style type="text/css">
@@ -48,9 +41,9 @@ lowing the user to toggle back and forth between the two images.
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 5vw;
-            width: 60%;
-            /*padding: 3em*/
+            /*margin-top: 5vw;*/
+            width: 100%;
+            padding: 3em
         }
 
         .content {
@@ -67,16 +60,16 @@ lowing the user to toggle back and forth between the two images.
             font-size: 4vh;
             font-family: 'Overpass Mono', monospace;
             font-weight: 100;
-            margin: 0;
-            color: red;
+            color: white;
             text-align: center;
             line-height: 1.3;
+
         }
 
         h2 {
             font-size: 4vh;
             font-family: 'Overpass Mono', monospace;
-            color: red;
+            color: black;
             text-align: center;
             padding-top: 4vw;
         }
@@ -84,15 +77,18 @@ lowing the user to toggle back and forth between the two images.
         h3 {
             font-size: 2.5vh;
             font-family: 'Overpass Mono', monospace;
-            color: red;
+            color: white;
             padding: 4vw;
             text-align: left;
             line-height: 1.5;
         }
         .top {
 
-            padding: 2em;
-
+          text-align: center;
+          padding-left: 2em;
+          padding-right: 2em;
+          padding-top: 30em;
+          padding-bottom: 3em;
         }
 
         @media all and (min-width: 960px) {
@@ -100,28 +96,30 @@ lowing the user to toggle back and forth between the two images.
                 font-size: calc(7vw * 0.7);
                 font-family: 'Overpass Mono', monospace;
                 font-weight: 100;
-                color: yellow;
-                text-align: left;
+                color: white;
+                text-align: center;
                 line-height: 1.5;
             }
             h2 {
-                font-size: calc(3vw * 0.7);
+                font-size: calc(3.5vw * 0.7);
                 font-family: 'Overpass Mono', monospace;
-                color: yellow;
+                color: black;
                 text-align: center;
             }
             h3 {
-                font-size: calc(2vw * 0.7);
+                font-size: calc(3vw * 0.7);
                 font-family: 'Overpass Mono', monospace;
-                color: yellow;
+                color: white;
                 padding: 4vw;
                 text-align: left;
                 line-height: 1.5;
             }
             .top {
-
-                padding: 5em;
-
+              text-align: center;
+              padding-left: 2em;
+              padding-right: 2em;
+              padding-top: 30em;
+              padding-bottom: 3em;
             }
         }
 
@@ -130,28 +128,31 @@ lowing the user to toggle back and forth between the two images.
                 font-size: 6vw;
                 font-family: 'Overpass Mono', monospace;
                 font-weight: 100;
-                color: blue;
+                color: white;
                 text-align: center;
                 line-height: 1.3;
             }
             h2 {
                 font-size: 3vh;
                 font-family: 'Overpass Mono', monospace;
-                color: blue;
+                color: black;
                 text-align: center;
                 padding-top: 4vw;
             }
             h3 {
                 font-size: 2vh;
                 font-family: 'Overpass Mono', monospace;
-                color: blue;
+                color: white;
                 padding: 4vw;
                 text-align: left;
                 line-height: 1.5;
             }
             .top {
-
-                padding: 5em;
+              text-align: center;
+              padding-left: 2em;
+              padding-right: 2em;
+              padding-top: 30em;
+              padding-bottom: 3em;
 
             }
         }
@@ -197,13 +198,12 @@ lowing the user to toggle back and forth between the two images.
         </div></a>
 
 
-        <div class="col-sm-12 top" style="background-color: #1EB255;">
+        <div class="col-sm-12 " style="background-color: #1EB255; padding-top:3em; padding-bottom:3em">
             <!-- <div class="col-sm-6">
                 <img class="headerimg" src="assets/placeholder_double.png">
             </div> -->
-            <div class="col-sm-12 top" style="text-align:center">
-
-                <h1>How do you make a hiring decision as easy as <img src="assets/hirewire_checkmark.png" style="width:7vw">?</h1>
+            <div class="col-sm-12">
+                <span class="top"> <h1>How do you make a hiring decision as easy as <img src="assets/hirewire_checkmark.png" style="width:7vw">?</h1></span>
             </div>
         </div>
 
