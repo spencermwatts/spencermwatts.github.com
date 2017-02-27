@@ -19,22 +19,17 @@
 <body>
 
     <style type="text/css">
-
-      .fascist {
-                  font-size: 50%;
-                  letter-spacing: 8px;
-                  font-family: 'UnifrakturCook', monospace !important;
-                  font-weight: bold;
-                  background: red;
-                  color:white;
-                  word-wrap: break-word;
-
-              }
+        .fascist {
+            font-size: 50%;
+            letter-spacing: 8px;
+            font-family: 'UnifrakturCook', monospace !important;
+            font-weight: bold;
+            /*word-wrap: break-word;*/
+        }
 
         a {
-                color: white;
-
-              }
+            color: white;
+        }
 
         .name {
             font-size: 75px;
@@ -44,15 +39,18 @@
             text-shadow: 2px 1px DarkSlateGrey;
         }
 
-        .container{
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          align-items: center;
-        }
+        /*.container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }*/
+        .item {
 
+          padding: 2em;
+        }
         .container-fluid {
-            padding: 60px;
+            padding: 50px;
         }
 
         .about {
@@ -65,10 +63,9 @@
             -webkit-box-shadow: 10px 10px #DADADA;
         }
 
-        .x:hover{
-          /*text-transform: uppercase;*/
-          /*letter-spacing: -1px;*/
-
+        .x:hover {
+            /*text-transform: uppercase;*/
+            /*letter-spacing: -1px;*/
         }
 
         #about-1 {
@@ -82,102 +79,81 @@
             background-color: #1A4C49;
         }
 
-        .content {
-            font-size: 3vw;
-            font-family: 'Overpass Mono', monospace;
-            font-weight: 100;
-            margin: 5vw;
-            color: #ffffff;
-            background-color: #E5D410;
-            padding: 1em;
-
-            text-align: center;
-            position: relative;
-
-        }
-
-        #content-1 {
+        .content-1 {
             background-color: #E5D410;
             -webkit-box-shadow: -10px -10px #4C40FF;
         }
 
-        #content-2 {
+        .content-2 {
             background-color: #FF6000;
             -webkit-box-shadow: -10px 10px #971EB2;
         }
 
-        #content-3 {
+        .content-3 {
             background-color: #DADADA;
             -webkit-box-shadow: 10px 10px #FF6000;
         }
 
-        #content-4 {
+        .content-4 {
             background-color: #4C40FF;
             -webkit-box-shadow: 10px -10px #1EB255;
         }
 
-        #content-5 {
+        .content-5 {
             background-color: #black;
             -webkit-box-shadow: 10px 10px #4C40FF;
         }
 
-        #content-5 {
+        .content-5 {
             background-color: #1EB255;
             -webkit-box-shadow: -10px -10px #971EB2;
         }
 
-        #content-6 {
+        .content-6 {
             background-color: #4C40FF;
             -webkit-box-shadow: -10px 10px #971EB2;
         }
 
-        #content-descriptions{
-          font-size: 32 !important;
-          font-family: 'Raleway', sans-serif;
-          font-weight: bolder;
-          /*padding: -100px;*/
-          color: #ffffff;
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: white;
         }
-        .thumbnail {
-            background-color: rgba(0, 0, 0, 0);
-            border: 0 none;
-            width: 25%;
-            height: 25%;
+
+        .item:hover .overlay {
+          opacity: .85;
         }
-        /* TODO:
 
-- connect github to AWS
-- correct email address & make hyperlink
-- add content
-- change the directions of all the shadows so they all aren't the same
-- connect to domain name
-- figure out how to show content (should it all be on the same page? -
-- use http://jscroll.com/ to load content with scroll
-- move contact me up so it's more visible
-- put content supporting each of my claims (user researcher, product designer, etc)
+        .text_overlay {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          font-size: 24px;
+          font-family: 'Overpass Mono', monospace;
+          -webkit-box-shadow: 10px 10px #DADADA;
+          padding-top:1em;
+          padding-bottom:1em;
+          padding-left:.5em;
+          padding-right:.5em;
 
+        }
 
- */
-
- /*@media only screen and (max-width: 1200px) {
- .text {font-size:1.2em; }
- .descriptions {font-size:1em;}
- .yeartext {font-size:90%;}
- .title {font-size:4em; }
- .subtitle {font-size:2em;}
- .table{padding-left: 0}
- }
- @media only screen and (max-width: 500px) {
- .descriptions {font-size:.8em; }
- .text {font-size:1em; line-height:.5}
- .yeartext {font-size:80%;}
- .title {font-size:2em; }
- .subtitle {font-size:1.5em;
- .table{padding-left: 0}
-
- }*/
 
     </style>
+
+
+
     <div class="container-fluid">
         <div class="col-lg-12 name " style="margin-left:-30px">SPENCER MICHAEL WATTS</div>
     </div>
@@ -187,51 +163,67 @@
             <p>atlanta-based</p>
         </div>
         <div class="col-sm-4 about" style="padding-bottom:10px; padding-top:10px">
-          <span class="x">  <p>product designer</p> </span>
-          <span class="x">  <p>data analyst</p></span>
-          <span class="x">  <p>user researcher</p></span>
-          <span class="x">  <p>project manager</p></span>
-          <span class="x">  <p>dog owner</p></span>
+            <span class="x">  <p>product designer</p> </span>
+            <span class="x">  <p>data analyst</p></span>
+            <span class="x">  <p>user researcher</p></span>
+            <span class="x">  <p>project manager</p></span>
+            <span class="x">  <p> <a href="assets/bruno.png">dog dad extraordinaire</a></p></span>
         </div>
     </div>
-
     <div class="container-fluid">
-      <div class="col-lg-12">
-      <div class="row">
+    <a href="http://fascist.report/">  <div class="col-lg-6 col-md-6 col-sm-12 item">
+        <img style="width:100%" src="assets/fascistreport.png">
+        <div class="overlay">
+          <div class="text_overlay fascist" style="background-color: red;">the fascist.report</div>
+        </div>
+      </div></a>
+      <a href="hiring.html"><div class="col-lg-6 col-md-6 col-sm-12 item">
+        <img style="width:100%" src="assets/mainscreen.png">
+        <div class="overlay">
+          <div class="text_overlay" style="background-color: #4C40FF;">UI design</div>
+        </div>
+      </div> </a>
+    <a href="https://medium.com/@smw./nits-forwarding-images-in-facebook-messenger-4fac6a33b02b">  <div class="col-lg-6 col-md-6 col-sm-12 item">
+        <img style="width:100%" src="assets/facebook_forward.png">
+        <div class="overlay">
+          <div class="text_overlay" style="background-color: #FF6000;">small nits (fix URL)</div>
+        </div>
+      </div> </a>
+      <a href="http://fascist.report/"><div class="col-lg-6 col-md-6 col-sm-12 item">
+        <img style="width:100%" src="assets/resume.png">
+        <div class="overlay">
+          <div class="text_overlay" style="background-color: #971EB2;">resume</div>
+        </div>
+      </div></a>
 
-        <div class="col-lg-6 content"  id="content-1">UX and UI: mobile app A</div>
-        <div class="col-lg-6 content"  id="content-3">UX and UI: mobile app B</div>
-        <div class="row">
 
-        <div class="col-lg-6 content fascist" id="content-2"><a href="http://fascist.report/">website: fascist.report</a></div>
-        <div class="col-lg-6 content"  id="content-4">interaction: google reminders</div>
+
 
     </div>
 
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="container-fluid">
+<!--
+Hirewire
+Facebook nits
+Fascist Report
+CV
 
-  <div class="col-lg-12 content"  id="content-6">resume</div>
-</div>
-</div>
+-->
 
     <div class="container-fluid">
         <div class="col-sm-3 about" style="padding:30px; background-color:#FF6000;-webkit-box-shadow: -10px -10px  #DADADA">
             CONTACT ME:
         </div>
         <div class="col-sm-9 about" id="about-2" style="padding:10px; -webkit-box-shadow: 10px 10px #DADADA">
-            ME (at) SPENCER M WATTS (dot) COM </div>
+            ME (at) SPENCER M WATTS (dot) COM</div>
     </div>
     </div>
     <div class="container-fluid">
-      <div class="col-sm-12 about" style="background-color:white; text-align:center;color:black">
-        made from scratch in ATL
+        <div class="col-sm-12 about" style="background-color:white; text-align:center;color:black; -webkit-box-shadow: 0px 0px">
+            made from scratch in ATL -- PUT IN LINKEDIN, GITHUB ICONS
 
-      </div>
-  </div>
+
+        </div>
+    </div>
 
 </body>
 
