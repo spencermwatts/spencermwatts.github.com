@@ -1,0 +1,130 @@
+
+    .fascist {
+        font-size: 50%;
+        letter-spacing: 8px;
+        font-family: 'UnifrakturCook', monospace !important;
+        font-weight: bold;
+        /*word-wrap: break-word;*/
+    }
+
+    a {
+        color: black;
+    }
+
+    .name {
+        font-size: 75px;
+        font-family: 'Overpass Mono', monospace;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 1px DarkSlateGrey;
+    }
+
+    /*.container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }*/
+    .item {
+
+      padding: 2em;
+    }
+    .container-fluid {
+        padding: 50px;
+    }
+
+    .about {
+        font-size: 24px;
+        font-family: 'Overpass Mono', monospace;
+        /*margin-top: -100px;*/
+        color: #ffffff;
+        background-color: #0076FF;
+        box-shadow: 10 10;
+        -webkit-box-shadow: 10px 10px #DADADA;
+    }
+
+    .x:hover {
+        /*text-transform: uppercase;*/
+        /*letter-spacing: -1px;*/
+    }
+
+    #about-1 {
+        text-align: right;
+        margin-right: -16px;
+    }
+
+    #about-2 {
+        text-align: right;
+        margin-right: -16px;
+        background-color: #1A4C49;
+    }
+
+    .content-1 {
+        background-color: #E5D410;
+        -webkit-box-shadow: -10px -10px #4C40FF;
+    }
+
+    .content-2 {
+        background-color: #FF6000;
+        -webkit-box-shadow: -10px 10px #971EB2;
+    }
+
+    .content-3 {
+        background-color: #DADADA;
+        -webkit-box-shadow: 10px 10px #FF6000;
+    }
+
+    .content-4 {
+        background-color: #4C40FF;
+        -webkit-box-shadow: 10px -10px #1EB255;
+    }
+
+    .content-5 {
+        background-color: #black;
+        -webkit-box-shadow: 10px 10px #4C40FF;
+    }
+
+    .content-5 {
+        background-color: #1EB255;
+        -webkit-box-shadow: -10px -10px #971EB2;
+    }
+
+    .content-6 {
+        background-color: #4C40FF;
+        -webkit-box-shadow: -10px 10px #971EB2;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: white;
+    }
+
+    .item:hover .overlay {
+      opacity: .85;
+    }
+
+    .text_overlay {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-family: 'Overpass Mono', monospace;
+      -webkit-box-shadow: 10px 10px #DADADA;
+      padding-top:1em;
+      padding-bottom:1em;
+      padding-left:.5em;
+      padding-right:.5em;
+
+    }
