@@ -1,4 +1,9 @@
 
+
+ body{
+
+   background-color: #FEFDFE;
+ }
     .fascist {
         font-size: 50%;
         letter-spacing: 8px;
@@ -104,7 +109,7 @@
       width: 100%;
       opacity: 0;
       transition: .5s ease;
-      background-color: white;
+      background-color: #FEFDFE;
     }
 
     .item:hover .overlay {
